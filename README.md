@@ -1,1 +1,8 @@
-# Chat-GPT-2-Text-Generation
+## Chat GPT 2: Text Generation
+  Import the essential libraries: Flask for developing the net application, request for managing HTTP requests, render_template_string for rendering HTML templates, and the transformers library for GPT-2 version and tokenizer.
+  Create a Flask application instance.
+  Load the GPT-2 tokenizer and model if they may be not already loaded. This code block ensures that the version and tokenizer are loaded most effective as soon as whilst the software begins.
+  Define a feature gen_text that takes enter text, tokenizer, version, max_length, and early_stopping as arguments. This function encodes the enter text using the tokenizer, generates interest masks, and generates textual content the use of the GPT-2 model. The generated output is then decoded and lower back.
+  Define a direction for the home page ('/'). This direction handles each GET and POST requests. In the POST request segment, it retrieves the person input and the most period of the generated text from the form submitted with the aid of the user. It then calls the gen_text characteristic to generate the text based totally on the user enter. The generated textual content is handed to the template for rendering.
+  Define an HTML template the use of the render_template_string feature. The template consists of a shape in which the consumer can input their input and the most length of the generated textual content. Upon submission, the shape sends a POST request to the server. If there's generated text available, it's far displayed in a text block below the form.
+  Start the Flask application by using calling the run method.
